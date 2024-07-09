@@ -1,0 +1,99 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+a {
+  width: fit-content;
+}
+.search-btn {
+  background-color: #016e7f;
+  border: none;
+  padding: 12px 24px;
+  width: 200px;
+  height: 56px;
+  border-radius: 12px;
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: #01535f;
+  }
+
+  &.default-btn:active {
+    background-color: #01535f;
+  }
+}
+.default-btn {
+  background-color: #016e7f;
+  border: none;
+  padding: 12px 24px;
+  width: 200px;
+  border-radius: 12px;
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: #01535f;
+  }
+
+  &.default-btn:active {
+    background-color: #01535f;
+  }
+}
+
+.border-btn {
+  background-color: transparent;
+  border: 1px solid #016e7f;
+  padding: 10px 16px;
+  color: #016e7f;
+  max-width: fit-content;
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: #016e7f;
+    border: 1px solid #016e7f;
+  }
+
+  &.border-btn:active {
+    background-color: #016e7f;
+    border: 1px solid #016e7f;
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: none;
+  color: #d9d9d9;
+  width: min-content;
+  &:hover {
+    background-color: transparent;
+    color: #d9d9d9;
+  }
+}
+
+.btn-light-blue {
+  background-color: rgba(208, 240, 239, 1);
+  color: rgba(1, 110, 127, 1);
+  padding: 16px, 24px, 16px, 24px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "General Sans", sans-serif;
+  width: 100%;
+  border: none;
+  height: 50px;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: #01535f;
+    color: white;
+  }
+  &.btn-light-blue:active {
+    background-color: #01535f;
+    color: white;
+  }
+}

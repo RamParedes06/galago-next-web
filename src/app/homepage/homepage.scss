@@ -1,0 +1,285 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url("https://fonts.cdnfonts.com/css/general-sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.hero-section {
+  background: url("https://galago-assets.s3.ap-southeast-1.amazonaws.com/galago-v1-web/galago-v1-web/src/resources/images/homepage/banner_IMG.webp");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  justify-content: space-around;
+  .hero-details {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    gap: 3rem;
+    transform: translate(-20%, -50%);
+    width: fit-content;
+
+    h1 {
+      padding-bottom: 1rem;
+      font-family: "Satoshi", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+}
+
+// TAB
+
+.hero-tab-container {
+  padding: 0;
+  position: relative;
+  width: 80%;
+  bottom: 215px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  .nav-link {
+    color: black;
+    font-weight: 500;
+    height: 53px;
+    width: 130px;
+    white-space: nowrap;
+
+    &.active {
+      color: rgba(1, 110, 127, 1);
+    }
+  }
+  .nav-link:hover {
+    border: 1px solid transparent;
+  }
+
+  // built-in margin below the tabs
+  .mb-3 {
+    margin-bottom: 0 !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(242, 242, 242, 0.5);
+  }
+
+  // Content
+  .fade {
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    transition: 0s;
+  }
+
+  .flights-tab,
+  .hotels-tab {
+    margin: 0;
+    padding: 24px 34px;
+    // height: 366px;
+  }
+}
+
+// FLIGHTS COMPONENT STYLES
+.tab-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    margin-bottom: 8px;
+  }
+  .trip-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #016e7f;
+    max-width: 320px;
+    width: 100%;
+    border-radius: 12px;
+    p {
+      margin-bottom: 0;
+    }
+
+    .trip-option {
+      max-width: 114px;
+      width: 100%;
+      padding: 8px 18px;
+      border-radius: 11px;
+      cursor: pointer;
+      background-color: transparent;
+      transition: 0.2s ease-in-out;
+      text-align: center;
+      outline: none;
+      border: none;
+      color: #016e7f;
+    }
+
+    .trip-option:hover,
+    .selected {
+      color: white;
+      background-color: #016e7f;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  .row-1 {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: last baseline;
+  }
+
+  .row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+// Hotels Components Switch
+.home-hotels-container {
+  .hotels-row-1 {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    gap: 1rem;
+
+    .hotels-col {
+      p {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .hotels-search-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+}
+
+.btn-switch {
+  place-content: center;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background-color: #016e7f;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  &.btn-switch:hover {
+    rotate: (180deg);
+    transition: 0.4s ease-in-out;
+  }
+}
+
+// BANNER TXTS
+.bannertexts-container {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 700px;
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    color: rgba(173, 173, 173, 1);
+  }
+}
+
+// MIDDLE SECTION
+
+.middle-section {
+  text-align: center;
+  position: relative;
+  overflow-y: hidden;
+
+  .banner-one {
+    padding: 150px;
+    background-color: rgba(1, 110, 127, 1);
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .banner-two {
+    background: url(https://galago-assets.s3.ap-southeast-1.amazonaws.com/Galago-v2-Assets/Homepage+Assets/homepage_banner.png);
+    width: 100%;
+    min-height: 477px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .banner-three {
+    background-color: rgba(1, 110, 127, 1);
+    color: white;
+    height: 280px;
+    display: flex;
+    gap: 6rem;
+
+    .banner-three-details {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      h1 {
+        font-size: 34px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    .banner-three-img {
+      position: relative;
+      bottom: 200px;
+      width: 400px;
+      left: 100px;
+      margin: 0 100px;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// SLIDER PART
+.swipper-container {
+  // padding-left: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  h1 {
+    font-weight: 700;
+    font-size: 34;
+    max-width: 400px;
+  }
+}
